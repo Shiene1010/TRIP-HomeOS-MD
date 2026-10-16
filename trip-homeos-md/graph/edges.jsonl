@@ -1,0 +1,6 @@
+{"action":"SELECT_ROLE","condition":"ROLE_SELECTED","edge_id":"E01_START_TO_EP1","from":"NODE_START","to":"EP1_MORNING_CLINIC"}
+{"action":"LOG_PPL_CONVERSION:Bora Pediatrics","condition":"IP == 1 && LATENCY < 45s","edge_id":"E02_EP1_PASS","from":"EP1_MORNING_CLINIC","to":"EP2_AFTERSCHOOL_ROUTE"}
+{"action":"INJECT_RECOVERY_VARIANT","condition":"IP == 2 || LATENCY >= 45s","edge_id":"E03_EP1_FAIL","from":"EP1_MORNING_CLINIC","to":"EP1_MORNING_CLINIC"}
+{"action":"LOG_PPL_CONVERSION:E-Mart Everyday Bora","condition":"IP == 1","edge_id":"E04_EP2_PASS","from":"EP2_AFTERSCHOOL_ROUTE","to":"EP3_EVENING_DESK"}
+{"action":"LOG_PPL_CONVERSION:Hanssem Kids Desk","condition":"IP == 1","edge_id":"E05_EP3_PASS","from":"EP3_EVENING_DESK","to":"EP4_WEEKEND_SPORTS"}
+{"action":"LOG_PPL_CONVERSION:Giheung Sports Center","condition":"IP == 1","edge_id":"E06_EP4_PASS","from":"EP4_WEEKEND_SPORTS","to":"NODE_END"}

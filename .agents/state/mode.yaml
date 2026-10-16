@@ -1,0 +1,6 @@
+project_name: __PROJECT_NAME__
+project_slug: __PROJECT_SLUG__
+mode: works-now
+reason: "Initial default mode"
+selected_workflow: start-project
+last_updated: __DATE__

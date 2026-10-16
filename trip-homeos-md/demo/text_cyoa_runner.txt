@@ -1,0 +1,45 @@
+==================================================
+[TRIP HomeOS CYOA Engine v1.0] - Universal Dodo Edition
+==================================================
+
+[STEP 0] Select Your Voice (Enter 1-5):
+1. Mom / 2. Dad / 3. Uncle / 4. Grandma / 5. Teacher
+> [User Input]: 1 (Mom selected)
+
+--------------------------------------------------
+[EPISODE 1] 08:00 AM - EP1_MORNING_CLINIC
+--------------------------------------------------
+[T]: Dodo has a mild cough. Milk cup slipped on the kitchen table.
+[R]:
+  1. Call Bora Pediatrics for a 9 AM slot. Wear the mask.
+  2. Wipe the milk off with the blue towel.
+[IP]: Is the clinic booked and table dry? [1: Yes / 2: No]
+> 1 | Timer: 28.4s -> PASSED, PPL: Bora Pediatrics converted
+
+--------------------------------------------------
+[EPISODE 2] 15:45 PM - EP2_AFTERSCHOOL_ROUTE
+--------------------------------------------------
+[T]: The snack box is empty.
+[R]: Stop at E-Mart Everyday Bora. Buy one milk carton.
+[IP]: Did you buy the milk? [1: Yes / 2: No]
+> 2 | Timer: 62.1s LATENCY SPIKE -> fallback, cap 20->8 words
+
+--------------------------------------------------
+[EPISODE 3] 19:30 PM - EP3_EVENING_DESK
+--------------------------------------------------
+[T]: No games before work.
+[R]: Power on Hanssem desk lamp, complete 3 lines.
+[IP]: Folder verified? [1: Yes / 2: No]
+> 1 | Timer: 14.2s OPTIMAL
+
+--------------------------------------------------
+[EPISODE 4] 10:00 AM Sat - EP4_WEEKEND_SPORTS
+--------------------------------------------------
+[T]: Swimming class starts at 10:30.
+[R]: Pack towel in bag. Walk to Giheung Sports Center.
+[IP]: Are you at the center? [1: Yes / 2: No]
+> 1 | Timer: 21.0s PASSED
+
+==================================================
+[SESSION COMPLETE] P-CPA 3/4 converted
+==================================================
